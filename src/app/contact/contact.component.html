@@ -1,0 +1,34 @@
+<section class="contact d-flex text-center pt-4" id="contact">
+    <div class="container my-4">
+        <div class="row ">
+            <h2 class="text-uppercase mb-3 fs-1 fw-bolder main-color">CONATCT SECTION</h2>
+            <div class="d-flex  align-items-center justify-content-center mb-3">
+                <div class="line me-3" style="background-color: rgb(44, 62, 80);"></div>
+                <i class="fa-solid fa-star main-color"></i>
+                <div class="line ms-3" style="background-color: rgb(44, 62, 80);"></div>
+            </div>
+            <div class="col-md-12 mt-md-4">
+                <form class="w-60 mx-auto ">
+                    <div>
+                        <p [class]= "nameFlag? 'show-input-lable z-n1':'hide-input-lable z-n1'">userName :</p>
+                        <input type="text" class="form-control" placeholder="userName" (keyup)="showNameLable($event)">
+                    </div>
+                    <div class="">
+                        <p [class]= "ageFlag? 'show-input-lable z-n1':'hide-input-lable z-n1'">userAge :</p>
+                        <input type="text" class="form-control" placeholder="userAge" (keyup)="showAgeLable($event)">
+                    </div>
+                    <div>
+                        <p [class]= "emailFlag? 'show-input-lable z-n1':'hide-input-lable z-n1'">userEmail :</p>
+                        <input type="email" class="form-control" placeholder="userEmail" (keyup)="showEmailLable($event)">
+                    </div>
+                    <div>
+                        <p [class]= "passwordFlag? 'show-input-lable z-n1':'hide-input-lable z-n1'">userPassword :</p>
+                        <input type="email" class="form-control" placeholder="userPassword" (keyup)="showPasswordLable($event)">
+                    </div>
+
+                    <button class="btn btn-btnColor mt-4">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
